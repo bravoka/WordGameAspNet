@@ -17,3 +17,12 @@
 /Users/keyan/Projects/angular-asp/angular-asp/obj/Debug/netcoreapp1.1/angular-asp.AssemblyInfo.cs
 /Users/keyan/Projects/angular-asp/angular-asp/obj/Debug/netcoreapp1.1/angular-asp.dll
 /Users/keyan/Projects/angular-asp/angular-asp/obj/Debug/netcoreapp1.1/angular-asp.pdb
+/Users/keyan/Projects/WordGameAspNet/angular-asp/bin/Debug/netcoreapp1.1/angular-asp.deps.json
+/Users/keyan/Projects/WordGameAspNet/angular-asp/bin/Debug/netcoreapp1.1/angular-asp.runtimeconfig.json
+/Users/keyan/Projects/WordGameAspNet/angular-asp/bin/Debug/netcoreapp1.1/angular-asp.runtimeconfig.dev.json
+/Users/keyan/Projects/WordGameAspNet/angular-asp/bin/Debug/netcoreapp1.1/angular-asp.dll
+/Users/keyan/Projects/WordGameAspNet/angular-asp/bin/Debug/netcoreapp1.1/angular-asp.pdb
+/Users/keyan/Projects/WordGameAspNet/angular-asp/obj/Debug/netcoreapp1.1/angular-asp.csprojResolveAssemblyReference.cache
+/Users/keyan/Projects/WordGameAspNet/angular-asp/obj/Debug/netcoreapp1.1/angular-asp.AssemblyInfo.cs
+/Users/keyan/Projects/WordGameAspNet/angular-asp/obj/Debug/netcoreapp1.1/angular-asp.dll
+/Users/keyan/Projects/WordGameAspNet/angular-asp/obj/Debug/netcoreapp1.1/angular-asp.pdb

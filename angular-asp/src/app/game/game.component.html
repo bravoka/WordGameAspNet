@@ -1,35 +1,43 @@
-<div>
-
-<button (click)="SimpleCountdown()">
+<div class="main">
+	<button (click)="SimpleCountdown()">
 	Start
-</button>
-<button (click)="Reset()">
+	</button>
+	<button (click)="Reset()">
 	Reset
-</button>
-
-<br> 
-<label>Seconds Remaining:</label> {{ timeStart }}
+	</button>
+	<br>
+	<label>Seconds Remaining:</label>
+	{{ timeStart }}
 </div>
-	
 <h2>
-	Score
+Score
 </h2>
 {{playerPoints}} / {{roundsPlayed}}
-
-<div class="playboard" *ngIf="active">
-	<h2>
-		This is the playboard
-	</h2>
-	
-	{{ (currentWord.WordTarget)[0].toUpperCase() + (currentWord.WordTarget).slice(1)}}
-	
-	<p *ngFor="let word of currentWord.Options.Words; let i = index;">
-		<button [disabled]="isClickedArray[i]" class="{{buttonClass[i]}}" value='{{currentWord.Solution}}' (click)="[playerGuess(word,i)]">
-			{{word}}
-		</button>
-	</p>
-	<p *ngIf="resultMessage">
-	<img src={{resultIcon}} height=40px width=40px />
-	{{ resultMessage }}
-	</p>
-</div>
+<a routerLink="/game-run">GameStart</a>
+<router-outlet></router-outlet>
+<!-- <div class="playboard" *ngIf="active">
+		<h2>
+			This is the playboard
+		</h2>
+		{{ (currentWord.WordTarget)[0].toUpperCase() + (currentWord.WordTarget).slice(1)}}
+		<p *ngFor="let word of currentWord.Options.Words; let i = index;">
+				<button [disabled]="isClickedArray[i]" class="{{buttonClass[i]}}" value='{{currentWord.Solution}}' (click)="[playerGuess(word,i)]">
+					{{word}}
+				</button>
+		</p>
+		<p *ngIf="resultMessage">
+			<img src={{resultIcon}} height=40px width=40px />
+			{{ resultMessage }}
+		</p>
+	-->
+	<!--{{ (jsonData.selections[0].target)[0].toUpperCase() + (jsonData.selections[0].target).slice(1)}}-->
+	<!--<p *ngFor="let word of (jsonData.selections[i].words); let i = index;">-->
+	<!--<button [disabled]="isClickedArray[i]" class="{{buttonClass[i]}}" value='{{jsonData.selections[i].answer}}' (click)="[playerGuess(word,i)]">-->
+	<!--{{word}}-->
+	<!--</button>-->
+	<!--</p>-->
+	<!--<p *ngIf="resultMessage">-->
+	<!--<img src={{resultIcon}} height=40px width=40px />-->
+	<!--{{ resultMessage }}-->
+	<!--</p>-->
+	<!-- </div> -->

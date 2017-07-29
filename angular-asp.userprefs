@@ -1,11 +1,8 @@
 ﻿<Properties StartupConfiguration="{2DA57467-3C7E-4282-947A-97EAE77B689E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="angular-asp/Controllers/ValuesController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="angular-asp/Controllers/WordGameController.cs">
     <Files>
-      <File FileName="angular-asp/src/app/app.module.ts" Line="1" Column="1" />
-      <File FileName="angular-asp/Controllers/ValuesController.cs" Line="9" Column="1" />
-      <File FileName="angular-asp/Program.cs" Line="1" Column="1" />
-      <File FileName="angular-asp/Startup.cs" Line="17" Column="28" />
-      <File FileName="angular-asp/src/app/app.component.ts" Line="1" Column="1" />
+      <File FileName="angular-asp/Controllers/ValuesController.cs" Line="14" Column="28" />
+      <File FileName="angular-asp/Controllers/WordGameController.cs" Line="19" Column="6" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.angular-asp PreferredExecutionTarget="MonoDevelop.Default" />

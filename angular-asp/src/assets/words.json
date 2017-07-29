@@ -1,0 +1,343 @@
+
+	[
+		{
+			"description": "relentless",
+			"answer": "persisting",
+			"possibleChoices": [
+				"hopeless",
+				"brave",
+				"persisting",
+				"rushed" 
+			]
+		},
+		{
+			"description": "amsterdam",
+			"answer": "holland",
+			"possibleChoices": [
+				"holland",
+				"germany",
+				"slovakia",
+				"prague"
+			]
+		},
+		{
+			"description": "ag",
+			"answer": "silver",
+			"possibleChoices": [
+				"gold",
+				"argon",
+				"silver",
+				"arsenic"
+			]
+		},
+		{
+			"description": "candid",
+			"answer": "frank",
+			"possibleChoices": [
+				"hidden",
+				"elusive",
+				"obtrusive",
+				"frank"
+			]
+		},
+		{
+			"description": "vehement",
+			"answer": "passionate",
+			"possibleChoices": [
+				"passionate",
+				"unholy",
+				"composed",
+				"remarkable"
+			]
+		},
+		{
+			"description": "deviance",
+			"answer": "differ",
+			"possibleChoices": [
+				"evil",
+				"compact",
+				"differ",
+				"difficulty"
+			]
+		},
+		{
+			"description": "inane",
+			"answer": "senseless",
+			"possibleChoices": [
+				"achievable",
+				"boring",
+				"senseless",
+				"quick"
+			]
+		},
+		{
+			"description": "impatient",
+			"answer": "petulant",
+			"possibleChoices": [
+				"perdify",
+				"waffle",
+				"engrave",
+				"petulant"
+			]
+		},
+		{
+			"description": "patience",
+			"answer": "forbearance",
+			"possibleChoices": [
+				"forbearance",
+				"plethora",
+				"flak",
+				"plumb"
+			]
+		},
+		{
+			"description": "abstruse",
+			"answer": "cryptic",
+			"possibleChoices": [
+				"obvious",
+				"shallow",
+				"cynical",
+				"cryptic"
+			]
+		},
+		{
+			"description": "congeal",
+			"answer": "solidify",
+			"possibleChoices": [
+				"solidify",
+				"uprising",
+				"take apart",
+				"unfathomable"
+			]
+		},
+		{
+			"description": "jocular",
+			"answer": "amusing",
+			"possibleChoices": [
+				"strong",
+				"inflexible",
+				"useful",
+				"amusing"
+			]
+		},
+		{
+			"description": "tepid",
+			"answer": "lukewarm",
+			"possibleChoices": [
+				"lukewarm",
+				"shy",
+				"unconscious",
+				"alarming"
+			]
+		},
+		{
+			"description": "odius",
+			"answer": "dreadful",
+			"possibleChoices": [
+				"avarice",
+				"bountiful",
+				"unsurpassable",
+				"dreadful"
+			]
+		},
+		{
+			"description": "arcane",
+			"answer": "secret",
+			"possibleChoices": [
+				"secret",
+				"powerful",
+				"omnipotent",
+				"miraculous"
+			]
+		},
+		{
+			"description": "broach",
+			"answer": "raise",
+			"possibleChoices": [
+				"raise",
+				"bake",
+				"brag",
+				"avoid"
+			]
+		},
+		{
+			"description": "pompous",
+			"answer": "vain",
+			"possibleChoices": [
+				"vain",
+				"witty",
+				"arguable",
+				"surprising"
+			]
+		},
+		{
+			"description": "dubious",
+			"answer": "hesitant",
+			"possibleChoices": [
+				"puzzling",
+				"hesitant",
+				"saddening",
+				"obvious"
+			]
+		},
+		{
+			"description": "freedom and equality",
+			"answer": "liberalism",
+			"possibleChoices": [
+				"republic",
+				"conservatism",
+				"patriotism",
+				"liberalism"
+			]
+		},
+		{
+			"description": "maul",
+			"answer": "war hammer",
+			"possibleChoices": [
+				"war hammer",
+				"flail",
+				"lance",
+				"mace"
+			]
+		},
+		{
+			"description": "elaborate",
+			"answer": "to detail",
+			"possibleChoices": [
+				"to detail",
+				"to research",
+				"to confiscate",
+				"to reinvent"
+			]
+		},
+		{
+			"description": "hush",
+			"answer": "lull",
+			"possibleChoices": [
+				"lull",
+				"moment",
+				"canteen",
+				"noise"
+			]
+		},
+		{
+			"description": "ascertain",
+			"answer": "comprehend",
+			"possibleChoices": [
+				"detain",
+				"unknowing",
+				"direct",
+				"comprehend"
+			]
+		},
+		{
+			"description": "trifling",
+			"answer": "unimportant",
+			"possibleChoices": [
+				"scouting",
+				"searching",
+				"priority",
+				"unimportant"
+			]
+		},
+		{
+			"description": "inscrutable",
+			"answer": "inexplicable",
+			"possibleChoices": [
+				"inexplicable",
+				"undeniable",
+				"valuable",
+				"angerable"
+			]
+		},
+		{
+			"description": "clamor",
+			"answer": "roar",
+			"possibleChoices": [
+				"roar",
+				"anger",
+				"upheaval",
+				"beauty"
+			]
+		},
+		{
+			"description": "redeem",
+			"answer": "make amends",
+			"possibleChoices": [
+				"reconnect",
+				"as necessary",
+				"make amends",
+				"purchase"
+			]
+		},
+		{
+			"description": "subpoena",
+			"answer": "requirement for compliance",
+			"possibleChoices": [
+				"requirement for compliance",
+				"repay debts",
+				"notice of distribution",
+				"arrest warrant"
+			]
+		},
+		{
+			"description": "testiness",
+			"answer": "irritability",
+			"possibleChoices": [
+				"irritability",
+				"medical examination score",
+				"physical ability",
+				"logical ability"
+			]
+		},
+		{
+			"description": "inflexible",
+			"answer": "adamant",
+			"possibleChoices": [
+				"fury",
+				"beleagured",
+				"calm",
+				"adamant"
+			]
+		},
+		{
+			"description": "veritable",
+			"answer": "authentic",
+			"possibleChoices": [
+				"sophisticated",
+				"sociable",
+				"amusing",
+				"authentic"
+			]
+		},
+		{
+			"description": "conundrum",
+			"answer": "puzzle",
+			"possibleChoices": [
+				"world",
+				"utility",
+				"ear lobe",
+				"puzzle"
+			]
+		},
+		{
+			"description": "epicurean",
+			"answer": "person with refined tastes",
+			"possibleChoices": [
+				"person with refined tastes",
+				"person with traditional values",
+				"person with modern values",
+				"person who is a role model"
+			]
+		},
+		{
+			"description": "console",
+			"answer": "sympathize",
+			"possibleChoices": [
+				"sympathize",
+				"cheat",
+				"profit",
+				"play"
+			]
+		}
+	]

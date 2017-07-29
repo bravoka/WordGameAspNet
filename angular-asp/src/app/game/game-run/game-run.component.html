@@ -1,0 +1,16 @@
+<div class="counter">
+	Incorrect: {{ wrongAnswers }}
+</div>
+<div class="currentscore">
+	Score: {{ score }}
+</div>
+<ng-container *ngIf="words">
+<div>
+	{{ words[index].description | capitalization }}
+</div>
+<div class="main" *ngFor="let wrd of words[index].possibleChoices; let pos = index;">
+	<button [disabled]="isDisabled[pos]"  (click)="guessWord(wrd, pos)">
+	{{ wrd | capitalization }}
+	</button>
+</div>
+</ng-container>

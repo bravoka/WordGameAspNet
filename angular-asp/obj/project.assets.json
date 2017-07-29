@@ -20837,10 +20837,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/keyan/Projects/angular-asp/angular-asp/angular-asp.csproj",
+      "projectUniqueName": "/Users/keyan/Projects/WordGameAspNet/angular-asp/angular-asp.csproj",
       "projectName": "angular-asp",
-      "projectPath": "/Users/keyan/Projects/angular-asp/angular-asp/angular-asp.csproj",
-      "outputPath": "/Users/keyan/Projects/angular-asp/angular-asp/obj",
+      "projectPath": "/Users/keyan/Projects/WordGameAspNet/angular-asp/angular-asp.csproj",
+      "outputPath": "/Users/keyan/Projects/WordGameAspNet/angular-asp/obj",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

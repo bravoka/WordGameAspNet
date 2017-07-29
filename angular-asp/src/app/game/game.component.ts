@@ -2,6 +2,9 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { WordObject } from '../WordObject';
 import { Router } from '@angular/router';
 import { WordService } from '../services/words.service';
+import { Http } from '@angular/http';
+
+
 
 @Component({
 	selector: 'playboard',
@@ -16,25 +19,26 @@ import { WordService } from '../services/words.service';
 export class GameComponent implements OnInit, OnDestroy {
 
 	constructor(
-		private wordService: WordService, 
+	  private http: Http,
+		private wordService: WordService,
 		private router: Router) { }
 
 	shuffledSequence: number[] = [];
-	
+
 	selectionsIteration: number = 0;
 
 	jsonData: any;
-	
+
 	wordTarget: string;
-	
+
 	correctWord: string;
 
 	playerPoints: number = 0;
-	
+
 	roundsPlayed: number = 0;
 
 	wordObject: WordObject[] = [];
-	
+
 	rawJson: string;
 
 	currentWord: WordObject;
@@ -47,14 +51,41 @@ export class GameComponent implements OnInit, OnDestroy {
 
 	resultIcon: string ;
 
-	ngOnInit(): void {
-		this.getWordsObject();
-		this.currentWord = this.wordObject[0];
-		console.log(this.currentWord);
-	}
+	testWord: string;
+
+
+
+
+  ngOnInit(): void {
+    // this.getWordsObject();
+    // this.currentWord = this.wordObject[0];
+    // console.log(this.currentWord);
+
+    let wordObject: WordObject[] = [];
+    // new test
+    this.getWordsObjectHere().then(result => this.rawJson = result)
+      .then(() => this.jsonData = JSON.parse(this.rawJson))
+      .then( () => console.log(this.jsonData))
+      .then(() => this.testWord = this.jsonData.selections[0].target);
+  }
+
+
+  runLoop(x): void {
+    for (let i = 0; i < x.selections.length; i++) {
+      this.wordObject.push(new WordObject(
+        x.selections[i].target,
+        x.selections[i].answer,
+        x.selections[i].words)
+      );
+      return;
+    }
+  }
+
+
 
 	getWordsObject(): void {
-		this.wordObject = this.wordService.getWordsObject();
+		// this.wordObject = this.wordService.getWordsObject();
+		this.wordService.getWordsObject().then(w => this.wordObject = w);
 	}
 
 	/// TODO: Make wordArray into a wordObject so that it can have word.Text and word.AlreadyClicked
@@ -70,14 +101,15 @@ export class GameComponent implements OnInit, OnDestroy {
 				this.ResultsView("Good job!");
 			}
 			else {
-				
+
 				this.newRound();
 				return;
 				// Need to reset everything or go to a new page after this.
 			}
 		}
 		else {
-			this.resultIcon = "http://www.iconsdb.com/icons/preview/soylent-red/x-mark-xxl.png";
+			// this.resultIcon = "http://www.iconsdb.com/icons/preview/soylent-red/x-mark-xxl.png";
+			this.resultIcon = "../assets/x-mark-512.png"
 			this.roundsPlayed++;
 			console.log("Incorrect guess: " + guess);
 			this.isClickedArray[index] = true;
@@ -90,8 +122,8 @@ export class GameComponent implements OnInit, OnDestroy {
 			}
 
 			return;
-		} 
-	} 
+		}
+	}
 
 	ResultsView(message: string): void {
 		alert("Game over. " + message);
@@ -103,14 +135,15 @@ export class GameComponent implements OnInit, OnDestroy {
 	}
 
 	newRound(): void {
-		
+
+		//this.currentWord = this.wordObject[0];
 
 		this.isClickedArray = [ false, false, false, false ];
 
 		this.buttonClass = [ "choiceButtonOpen", "choiceButtonOpen", "choiceButtonOpen", "choiceButtonOpen" ];
 
 		this.currentWord = this.wordObject[this.selectionsIteration];
-	
+
 	}
 	active: boolean = false;
 	timeStart: number = 10;
@@ -126,15 +159,16 @@ export class GameComponent implements OnInit, OnDestroy {
 	}
 
 	SimpleCountdown(): void {
+		console.log(this.wordObject);
 		this.active = true;
 		// let _myInterval: any;
-		this._myInterval = setInterval(() => { 
+		this._myInterval = setInterval(() => {
 			if (this.timeStart == 0) {
 				this.ResultsView("Time Expired");
 			}
 			this.timeStart > this.timeFinish ? this.timeStart-- : clearInterval(this._myInterval);
 
-			 
+
 		}, 1000);
 	}
 
@@ -146,4 +180,14 @@ export class GameComponent implements OnInit, OnDestroy {
 	ngOnDestroy() {
 		clearInterval(this._myInterval);
 	}
+
+  getWordsObjectHere(): Promise<string> {
+
+    let wordObject: WordObject[] = [];
+    // this.jsonData = JSON.parse(this.mockData);
+    let a: string;
+    return Promise.resolve(this.http.get("api/WordGame").toPromise()
+      .then(res => res.text()));
+	}
+
 }

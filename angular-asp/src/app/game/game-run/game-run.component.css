@@ -1,0 +1,20 @@
+.main { 
+	background-color: red;
+ }
+
+ .blah {
+ 	background-color: grey;
+ }
+
+.clickable {
+
+}
+
+.unclickable {
+
+}
+
+.scoreboard {
+	background-color: green;
+	color: black;
+}
