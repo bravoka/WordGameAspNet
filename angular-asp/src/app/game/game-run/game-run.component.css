@@ -1,6 +1,17 @@
-.main { 
+.word { 
 	background-color: red;
+	float:left;
+	text-align: right;
  }
+
+
+
+ .result {
+ 	background-color: white;
+ 	float: right;
+
+ }
+
 
  .blah {
  	background-color: grey;
@@ -14,7 +25,15 @@
 
 }
 
+.timer {
+	background-color: yellow;
+}
+
 .scoreboard {
 	background-color: green;
 	color: black;
+}
+
+.inlined {
+	display: inline-block;
 }

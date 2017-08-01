@@ -13,8 +13,8 @@ import { WordObject } from '../WordObject';
 export class WordService {
 	constructor(private _http: Http) { }
 
-	// private dataUrl: string =  'api/WordGame';
-	private dataUrl: string = '../assets/words.json';
+	private dataUrl: string =  'api/WordGame';
+	// private dataUrl: string = '../assets/words.json';
 	GetGameWords(): Observable<IWord[]> {
 		return this._http.get(this.dataUrl).map((response: Response) => <IWord[]>response.json());
 	}

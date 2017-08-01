@@ -8,9 +8,22 @@
 <div>
 	{{ words[index].description | capitalization }}
 </div>
-<div class="main" *ngFor="let wrd of words[index].possibleChoices; let pos = index;">
-	<button [disabled]="isDisabled[pos]"  (click)="guessWord(wrd, pos)">
-	{{ wrd | capitalization }}
-	</button>
+<div>
+	<div class="main" *ngFor="let wrd of words[index].possibleChoices; let pos = index;">
+		<div class="inlined">
+			<div class="word">
+				<button [disabled]="isDisabled[pos]"  (click)="guessWord(wrd, pos)">
+				{{ wrd | capitalization }}
+				</button>
+			</div>
+			<div class="result">
+				<img src={{resultIcon[pos]}} width=40px height=40px>
+			</div>
+			<br><br>
+		</div>
+	</div>
 </div>
 </ng-container>
+<div class="timer">
+	{{ timeStart }}
+</div>
