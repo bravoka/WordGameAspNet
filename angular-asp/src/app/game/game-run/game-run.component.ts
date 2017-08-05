@@ -54,7 +54,7 @@ export class GameRunComponent implements OnInit
   startGame() 
   {
   	this._wordService.GetGameWords().subscribe(x => this.words = x, error => this.errorMessage = <any>error,
-      () => this.startTimer()); 
+      () => this.startTimer()); // startTimer() is not called until the API gets the data 
   }
 
   // <-- Running Game -->
@@ -91,7 +91,7 @@ export class GameRunComponent implements OnInit
     {
       // <-- Incorrect Guess -->
       this.isDisabled[pos] = true;  
-      this.resultIcon[pos] = "../assets/x-mark-512.png";
+      this.resultIcon[pos] = "../assets/xmark.png";
       this.wrongAnswers++;
     }
   }
