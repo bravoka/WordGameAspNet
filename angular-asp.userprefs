@@ -1,18 +1,24 @@
-﻿<Properties StartupConfiguration="{2DA57467-3C7E-4282-947A-97EAE77B689E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="angular-asp/angular-asp.csproj">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="angular-asp/Controllers/WordGameController.cs">
     <Files>
-      <File FileName="angular-asp/Controllers/WordGameController.cs" Line="21" Column="47" />
-      <File FileName="angular-asp/Models/GameResult.cs" Line="13" Column="1" />
-      <File FileName="angular-asp/Startup.cs" Line="35" Column="1" />
+      <File FileName="angular-asp/Controllers/WordGameController.cs" Line="1" Column="1" />
+      <File FileName="angular-asp/Models/GameResult.cs" Line="1" Column="1" />
+      <File FileName="angular-asp/Startup.cs" Line="1" Column="1" />
       <File FileName="angular-asp/package.json" Line="1" Column="1" />
       <File FileName="angular-asp/Program.cs" Line="1" Column="1" />
-      <File FileName="angular-asp/angular-asp.csproj" Line="14" Column="49" />
+      <File FileName="angular-asp/angular-asp.csproj" Line="1" Column="1" />
+      <File FileName="angular-asp/Models/User.cs" Line="1" Column="1" />
+      <File FileName="angular-asp/Persistence/GameDbContext.cs" Line="1" Column="1" />
+      <File FileName="angular-asp/Migrations/20170806011214_SecondMigration.cs" Line="1" Column="1" />
+      <File FileName="angular-asp/Migrations/20170806013356_Update.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.angular-asp PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/keyan/Projects/WordGameAspNet/angular-asp/Controllers/WordGameController.cs" relfile="angular-asp/Controllers/WordGameController.cs" line="44" column="62" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="angular-asp/Controllers/WordGameController.cs" line="63" offsetX="555" offsetY="904" expression="resultCsv" liveUpdate="False" />
