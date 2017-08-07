@@ -19,6 +19,7 @@ using WordGame.Persistence;
 using WordGame.Controllers.Resources;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 
 namespace WordGame 
 {
