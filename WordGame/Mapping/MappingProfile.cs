@@ -11,8 +11,10 @@ namespace WordGame.Mapping
             // Domain to API Resource
             CreateMap<GameResult, GameResultResource>();
             CreateMap<User, UserResource>();
+
+
             // API Resource to Domain
-            //CreateMap<GameResultResource, GameResult>();
+            CreateMap<GameResultResource, GameResult>();
 
         }
 	}
