@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { IWord } from '../../word';
+
+import { ResultService } from '../../services/results.service';
 import { WordService } from '../../services/words.service';
+
 import { Router } from '@angular/router';
 
 @Component({
@@ -23,9 +26,9 @@ export class GameRunComponent implements OnInit
 
   resultIcon: string[] = [];
 
-  wrongAnswers: number = 0;
+  incorrectAnswers: number = 0;
 
-  correctAnswers: number = 0;
+  correctAnswers: number = 0; //<-- unused
 
   score: number = 0;
 
@@ -43,7 +46,7 @@ export class GameRunComponent implements OnInit
   }
   // Timer Stuff -->
 
-  constructor(private _wordService: WordService, private _router: Router) { }
+  constructor(private _wordService: WordService, private _router: Router, private _resultService: ResultService) { }
 
 
   ngOnInit() 
@@ -58,11 +61,11 @@ export class GameRunComponent implements OnInit
   }
 
   // <-- Running Game -->
-
+  // TODO: Do something with res.GameId Parameter for the view results!
   onTimeExpired(): void {
     console.log("Time Expired");
-    
-    this._router.navigate(['/view-results']);
+    this._resultService.PostResult(this.score, this.incorrectAnswers).subscribe(res => {console.log(res);},
+     () => { this._router.navigate(['/view-results']); });
   }
 
   checkDisabled(pos: number): boolean {
@@ -92,7 +95,7 @@ export class GameRunComponent implements OnInit
       // <-- Incorrect Guess -->
       this.isDisabled[pos] = true;  
       this.resultIcon[pos] = "../assets/xmark.png";
-      this.wrongAnswers++;
+      this.incorrectAnswers++;
     }
   }
 }
